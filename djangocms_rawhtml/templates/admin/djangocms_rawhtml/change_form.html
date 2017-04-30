@@ -1,0 +1,26 @@
+{% extends "admin/cms/page/plugin/change_form.html" %}
+{% load staticfiles %}
+
+{% block extrahead %}
+    {{ block.super }}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.9.0/codemirror.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.9.0/codemirror.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.9.0/mode/xml/xml.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.9.0/mode/htmlmixed/htmlmixed.js"></script>
+
+    <script type="text/javascript">
+        (function(){
+            var $ = django.jQuery;
+            $(document).ready(function(){
+                $('textarea#id_body').each(function(idx, el){
+                    CodeMirror.fromTextArea(el, {
+                        lineNumbers: true,
+                        mode: 'htmlmixed'
+                    });
+                });
+            });
+        })();        
+    </script>
+{% endblock %}
+

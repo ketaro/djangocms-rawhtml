@@ -13,7 +13,7 @@ INSTALL_REQUIRES = [
 
 setup(
     name='djangocms-rawhtml',
-    version='0.1',
+    version='0.2',
     packages=[
         'djangocms_rawhtml',
         'djangocms_rawhtml.migrations',

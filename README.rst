@@ -17,8 +17,7 @@ Installation
 
     pip install djangocms-rawhtml
 
-
-1. Add to your ``INSTALLED_APPS`` (in ``settings.py``):
+2. Add to your ``INSTALLED_APPS`` (in ``settings.py``):
 
     INSTALLED_APPS = (
         ...
@@ -26,8 +25,8 @@ Installation
         ...
     )
 
-2. Run migrations:
+3. Run migrations:
 
     python manage.py migrate djangocms_rawhtml
 
-3. "Raw HTML" should now be available as a plugin in the CMS!
+4. "Raw HTML" should now be available as a plugin in the CMS!

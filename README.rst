@@ -3,7 +3,7 @@ djangcms-rawhtml
 
 DjangoCMS Plugin that lets you insert raw HTML code into a page.
 
-This idea might seem offensive to some CMS "purists", but every now and then there are times when inserting a little block of HTML code is needed to get a job done quickly.
+A raw HTML plugin may be a bit of a CMS anti-pattern, but every now and then there are times when inserting a little block of HTML code is needed to get a job done quickly.
 
 This Plugin combines the ideas of `cmsplugin-raw-html <https://github.com/makukha/cmsplugin-raw-html>`_
 with `code-editor-django-admin <https://mr-coffee.net/blog/code-editor-django-admin>`_ by giving 

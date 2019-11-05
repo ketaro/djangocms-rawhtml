@@ -22,6 +22,7 @@ setup(
     license='BSD License',
     description='Raw HTML Plugin for DjangoCMS with HTML code editor.',
     long_description=README,
+    long_description_content_type="text/markdown",
     url='https://github.com/ketaro/djangocms-rawhtml',
     author='Nick Avgerinos',
     author_email='nicka@axcella.com',

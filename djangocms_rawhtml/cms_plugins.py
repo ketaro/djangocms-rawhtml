@@ -7,7 +7,7 @@ from djangocms_rawhtml.models import RawHTMLPluginData
 @plugin_pool.register_plugin
 class RawHTMLPluginPublisher(CMSPluginBase):
     """
-    Plugin to manage ran HTML text that needs to be managed from the admin interface.
+    Plugin to manage raw HTML text that needs to be managed from the admin interface.
     """
     name = _("Raw HTML")
     model = RawHTMLPluginData

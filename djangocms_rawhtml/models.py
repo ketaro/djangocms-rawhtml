@@ -1,5 +1,5 @@
 from django.db import models
-from django.utils.encoding import python_2_unicode_compatible
+from six import python_2_unicode_compatible
 from cms.models.pluginmodel import CMSPlugin
 from django.utils.text import Truncator
 from django.utils.html import strip_tags

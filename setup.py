@@ -9,11 +9,12 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 INSTALL_REQUIRES = [
     'django-cms>=3.3.0',
+    'six>=1.15.0'
 ]
 
 setup(
     name='djangocms-rawhtml',
-    version='0.2',
+    version='1.0',
     packages=[
         'djangocms_rawhtml',
         'djangocms_rawhtml.migrations',

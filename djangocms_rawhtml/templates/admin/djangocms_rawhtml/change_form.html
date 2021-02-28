@@ -3,6 +3,14 @@
 {% block extrahead %}
     {{ block.super }}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.59.4/codemirror.css">
+    {% if theme %}
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.59.4/theme/{{ theme }}.css">
+    {% endif %}
+    <style>
+        .CodeMirror {
+            height: auto;
+        }
+    </style>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.59.4/codemirror.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.59.4/mode/xml/xml.js"></script>
@@ -16,10 +24,13 @@
                     CodeMirror.fromTextArea(el, {
                         lineNumbers: true,
                         mode: 'htmlmixed',
+                        {% if theme %}
+                            theme: '{{ theme }}',
+                        {% endif %}
                         lineWrapping: true
                     });
                 });
             });
-        })();        
+        })();
     </script>
 {% endblock %}

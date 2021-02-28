@@ -30,3 +30,12 @@ Installation
     python manage.py migrate djangocms_rawhtml
 
 4. "Raw HTML" should now be available as a plugin in the CMS!
+
+
+Configuration
+-------------
+
+In your `settings.py` you can set:
+
+  `CODEMIRROR_THEME` : (Optional) The name of the codemirror theme you would like to use (just the name, don't include the `.css` part).  Will use `default` if not set.  See: https://codemirror.net/theme/ for a list of themes.
+

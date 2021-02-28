@@ -15,9 +15,13 @@ Installation
 
 1. Install via pip:
 
+::
+
     pip install djangocms-rawhtml
 
 2. Add to your ``INSTALLED_APPS`` (in ``settings.py``):
+
+::
 
     INSTALLED_APPS = (
         ...
@@ -26,6 +30,8 @@ Installation
     )
 
 3. Run migrations:
+
+::
 
     python manage.py migrate djangocms_rawhtml
 
@@ -37,5 +43,16 @@ Configuration
 
 In your `settings.py` you can set:
 
-  `CODEMIRROR_THEME` : (Optional) The name of the codemirror theme you would like to use (just the name, don't include the `.css` part).  Will use `default` if not set.  See: https://codemirror.net/theme/ for a list of themes.
++----------------------+-------------+
+| Setting              | Description |
++======================+=============+
+| ``CODEMIRROR_THEME`` | (Optional) The name of the codemirror theme you would like to use (just the name, don't include the ``.css`` part).  Will use ``default`` if not set.  See: https://codemirror.net/theme/ for a list of themes. |
++----------------------+-------------+
+
+
+=========  ============
+ Setting   Description
+---------  ------------
+CODEMIRROR_THEME  (Optional) The name of the codemirror theme you would like to use (just the name, don't include the ``.css`` part).  Will use ``default`` if not set.  See: https://codemirror.net/theme/ for a list of themes.
+=========  ============
 

@@ -14,7 +14,7 @@ INSTALL_REQUIRES = [
 
 setup(
     name='djangocms-rawhtml',
-    version='1.2',
+    version='1.2.1',
     packages=[
         'djangocms_rawhtml',
         'djangocms_rawhtml.migrations',
@@ -33,6 +33,7 @@ setup(
         'Framework :: Django',
         'Framework :: Django :: 3.0',
         'Framework :: Django :: 3.1',
+        'Framework :: Django :: 3.2',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: BSD License',  # example license
         'Operating System :: OS Independent',
@@ -40,6 +41,7 @@ setup(
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
         'Topic :: Internet :: WWW/HTTP',
         'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
     ],

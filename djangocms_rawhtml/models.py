@@ -1,11 +1,9 @@
 from django.db import models
-from six import python_2_unicode_compatible
 from cms.models.pluginmodel import CMSPlugin
 from django.utils.text import Truncator
 from django.utils.html import strip_tags
 
 
-@python_2_unicode_compatible
 class RawHTMLPluginData(CMSPlugin):
     """
     Model for Raw HTML Plugin

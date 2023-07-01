@@ -13,15 +13,11 @@ a default ``TextField``.
 Installation
 ------------
 
-1. Install via pip:
-
-::
+1. Install via pip::
 
     pip install djangocms-rawhtml
 
-2. Add to your ``INSTALLED_APPS`` (in ``settings.py``):
-
-::
+2. Add to your ``INSTALLED_APPS`` (in ``settings.py``)::
 
     INSTALLED_APPS = (
         ...
@@ -29,9 +25,7 @@ Installation
         ...
     )
 
-3. Run migrations:
-
-::
+3. Run migrations::
 
     python manage.py migrate djangocms_rawhtml
 

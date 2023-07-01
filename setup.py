@@ -8,8 +8,7 @@ with open(os.path.join(os.path.dirname(__file__), 'README.rst')) as readme:
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 INSTALL_REQUIRES = [
-    'django-cms>=3.3.0',
-    'six>=1.15.0'
+    'django-cms>=3.8.0',
 ]
 
 setup(
